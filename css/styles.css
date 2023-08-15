@@ -1,0 +1,190 @@
+/* Estilos generales del cuerpo */
+body{
+    /* Configuración del grid y propiedades de fuente */
+    display: grid;
+    font-family: 'REM', sans-serif;
+    background-color: #05d3f8;
+    color: #3a3132;
+    margin: auto;
+    grid-template-areas: 
+        "header header header header header"
+        "main main main main main"
+        "footer footer footer footer footer";
+    gap: 4px;
+    grid-template-rows: 1fr 2fr 1fr;
+    height: 100vh;
+    
+}
+
+/* Estilos del encabezado */
+header{
+    grid-area: header;
+    
+}
+
+ /* Estilos del contenido principal */
+main{
+    grid-area: main;
+    background-color: #ffffff;
+}
+
+/* Estilos de la sección */
+/* section{
+    grid-area: section;
+} */
+
+/* Estilos del pie de página */
+footer{
+    grid-area: footer;
+    margin-top: 100px;
+}
+
+/* Estilos del título */
+h1{
+    /* Centrado del título y color de texto */
+    text-align: center;
+    margin-top: 150px;
+    margin-bottom: 150px;
+    justify-content: center;
+    color: #3a3132;
+}
+
+/* Estilos del nav bar */
+.nav-bar-h{
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+justify-content: space-between;
+background-color: #0f4571;
+align-items: center;
+margin: auto;
+padding: 20px;
+}
+
+.nav-links-h{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;    
+}
+
+.nav-links-h li{
+    display: flex;
+    margin: 10px 50px;
+    padding: 25px;
+}
+
+img, .logo-h{
+    height: 20px;
+    width: auto;
+    margin-left: 50px;
+}
+
+/* Estilos de los enlaces del nav bar cambio de colores */
+header li a{
+    text-decoration: none;
+    color: #ffffff;
+    transition: color 0.4s;
+}
+
+header li a:hover{
+    text-decoration:underline;
+    color: #05d3f8;
+}
+
+header li{
+    color: #ffffff;
+    transition: background-color 0.4s;}
+
+header li:hover{
+    background-color: #0c2f76;
+    border-radius: 5px;
+}
+
+ /* Dropdown del nav bar */
+.dropdown-h {
+    position: relative;
+}
+
+.dropdown-toggle-h::after {
+    content: '\25BC'; /* Triángulo hacia abajo */
+    margin-left: 5px;
+}
+
+.sub-menu-h {
+    display: none;
+    position: absolute;
+    background-color: #0f4571;
+    padding: 5px;
+    list-style: none;
+    border-radius: 10px;
+    width: 190px;
+    margin-left: -30px;
+}
+
+.dropdown-h:hover .sub-menu-h {
+    display: block;
+    margin-top: 25px;
+    
+}
+
+/* Estilos de los enlaces del dropdown nav bar */
+
+.sub-menu-h li {
+    margin: 5px;
+}
+
+.sub-menu-h li a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+/******************************************* MAIN ***********************************************/
+
+.card-img-top1{
+    width: auto;
+    height: auto;
+    margin: 0px;
+}
+
+/* Estilos para dispositivos móviles */
+@media (max-width: 800px) {
+    
+    .nav-bar-h{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+    .nav-links-h  {
+        display: flex;
+        flex-direction: column;
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .nav-links-h > li{
+        margin: 5px;
+        padding: 5px;
+    }
+
+    .logo-h {
+        margin: 5px;
+        padding: 5px;
+    }
+}
+
+/* Paleta de colores */
+.color1 { color:#3a3132 };
+.color2 { color:#0f4571 };
+.color3 { color:#386dbd };
+.color4 { color:#009ddd };
+.color5 { color:#05d3f8 };
+
+.color1 { color: #2477d7 };
+.color2 { color: #8faed5 };
+.color3 { color: #0c2f76 };
+.color4 { color: #6781ae };
+.color5 { color: #acbcd0 };
+
+.color1 { color: #ffffff };
+.color1 { color: #000000 };
