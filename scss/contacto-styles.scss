@@ -1,27 +1,47 @@
 .main{
     .contacto{
         display: flex;
-        flex-direction: column;
-        margin: 0px 50px;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        margin: 0rem 0rem 10rem 0rem;
 
-        .fila-imagenes{
+        .fila-whatsapp{
             display: flex;
-            flex-direction: row;
-            justify-content: space-evenly;
+            flex-direction: column;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
             
             img{
                 height: auto;
                 width: 100px;
+                margin: 5rem;
+            }
+
+            p{
+                max-width: 30rem;
+                text-align: center;
             }
         }
 
-        .fila-descripcion{
+        .fila-gmail{
             display: flex;
-            flex-direction: row;
-            justify-content: space-between;
+            flex-direction: column;
+            flex-wrap: wrap;
+            justify-content: center;
             align-items: center;
-            margin: 100px;
-            text-align: center;
+            
+
+            img{
+                height: auto;
+                width: 100px;
+                margin: 5rem;
+            }
+            p{
+                max-width: 30rem;
+                text-align: center;
+            }
         }
     }
 }

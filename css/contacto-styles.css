@@ -1,23 +1,40 @@
 .main .contacto {
   display: flex;
-  flex-direction: column;
-  margin: 0px 50px;
-}
-.main .contacto .fila-imagenes {
-  display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   justify-content: space-evenly;
+  margin: 0rem 0rem 10rem 0rem;
 }
-.main .contacto .fila-imagenes img {
+.main .contacto .fila-whatsapp {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.main .contacto .fila-whatsapp img {
   height: auto;
   width: 100px;
+  margin: 5rem;
 }
-.main .contacto .fila-descripcion {
+.main .contacto .fila-whatsapp p {
+  max-width: 30rem;
+  text-align: center;
+}
+.main .contacto .fila-gmail {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
   align-items: center;
-  margin: 100px;
+}
+.main .contacto .fila-gmail img {
+  height: auto;
+  width: 100px;
+  margin: 5rem;
+}
+.main .contacto .fila-gmail p {
+  max-width: 30rem;
   text-align: center;
 }
 
