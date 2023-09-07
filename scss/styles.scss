@@ -1,0 +1,155 @@
+/* Importaciones */
+@import "colores";
+
+/* Reset de márgenes general*/
+*{
+    margin: 0rem;
+    padding: 0rem;
+}
+
+.body {
+    /* Configuración del grid y propiedades de fuente */
+    display: grid;
+    font-family: 'REM', sans-serif;
+    background-color: $blanco;
+    color: $negro;
+    margin: auto;
+    grid-template-areas:
+        "header header header header"
+        "main main main main"
+        "section section section section"
+        "footer footer footer footer";
+    gap: 4px;
+    grid-template-rows: 1fr 2fr 1fr;
+    height: 100vh;
+    background-image: url('../images/fondo-body-4.png');
+    background-size: contain;
+    background-repeat: repeat;
+    background-attachment: fixed;
+
+    /*Estilos generales para el header */
+    .header {
+        grid-area: header;
+        padding: 0rem 3rem;
+        background-color: $azul-tech-claro;
+
+        .nav-contenedor{
+            padding: 0rem ;
+            .nav-div{
+                background-color: $azul-tech-claro;
+                padding: 1rem ;
+            }
+        }
+
+        .navbar-h{
+
+            .nav-li{
+                margin: 0rem 1rem;
+                padding: 2rem;
+                .navbar-dropdown-menu{
+                    margin-top: -2rem;
+                }
+            }
+        }
+    }
+
+    /* Estilos generales para el main*/
+    .main {
+        grid-area: main;
+        display: flex;
+        flex-flow: column nowrap;
+        h1{
+            text-align: center;
+            margin-top: 150px;
+            margin-bottom: 150px;
+            justify-content: center;
+            color: $negro;
+        }
+    }
+
+    /* Estilos generales para el section */
+    .section {
+        grid-area: section;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-items: space-between;
+    }
+
+    /* Estilos generales para el footer */
+    .footer {
+        grid-area: footer;
+        background-color: $azul-tech-claro;
+        color: $blanco;
+        padding: 0px;
+
+        .footer-content {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            margin: 2rem 10rem;
+
+            .footer-links {
+                display: flex;
+
+                .footer-section {
+                    a:hover{
+                        text-decoration:underline;
+                    }
+                    margin-right: 40px;
+
+                    h3 {
+                        margin-bottom: 10px;
+                    }
+
+                    ul {
+                        list-style: none;
+                        padding: 0;
+                        margin: 0;
+
+                        li {
+                            margin-bottom: 5px;
+
+                            a {
+                                color: $blanco;
+                                text-decoration: none;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .footer-social {
+                display: flex;
+                flex-direction: column;
+                flex-wrap: wrap;
+                align-items: flex-end;
+
+                a {
+                    color: $blanco;
+                    font-size: 20px;
+                    margin-left: 15px;
+                    text-decoration: none;
+
+                    &:hover {
+                        color: $blanco;
+                    }
+                }
+            }
+        }
+
+        .footer-copyright {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            background-color: $azul-tech-oscuro;
+
+            p {
+                margin-top: 1rem;
+                margin-bottom: 1rem;
+            }
+        }
+    }
+}

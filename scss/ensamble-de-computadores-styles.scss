@@ -1,0 +1,68 @@
+.main{
+    .fila-computador {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: center;
+        margin: 50px 50px;
+
+        img {
+            width: auto;
+            height: 300px;
+        }
+
+        p {
+            max-width: 400px;
+        }
+    }
+
+    .fila-master-race {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: center;
+        margin: 50px 50px;
+
+        img{
+            width: auto;
+            height: 500px;
+        }
+
+        p{
+            max-width: 400px;
+            margin-left: 200px;
+        }
+    }
+}
+
+.section{
+    .fila-hardware{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        margin: 50px 100px;
+
+        .imagenes-hardware{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+
+            img{
+                width: auto;
+                height: 150px;
+            }
+
+            
+        }
+        p{
+            text-align: justify;
+            margin-top: 10rem;
+            max-width: 50rem;
+        }
+    }
+}

@@ -1,0 +1,24 @@
+.main .contacto {
+  display: flex;
+  flex-direction: column;
+  margin: 0px 50px;
+}
+.main .contacto .fila-imagenes {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.main .contacto .fila-imagenes img {
+  height: auto;
+  width: 100px;
+}
+.main .contacto .fila-descripcion {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 100px;
+  text-align: center;
+}
+
+/*# sourceMappingURL=contacto-styles.css.map */

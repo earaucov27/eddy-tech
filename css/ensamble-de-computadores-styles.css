@@ -1,0 +1,57 @@
+.main .fila-computador {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 50px 50px;
+}
+.main .fila-computador img {
+  width: auto;
+  height: 300px;
+}
+.main .fila-computador p {
+  max-width: 400px;
+}
+.main .fila-master-race {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 50px 50px;
+}
+.main .fila-master-race img {
+  width: auto;
+  height: 500px;
+}
+.main .fila-master-race p {
+  max-width: 400px;
+  margin-left: 200px;
+}
+
+.section .fila-hardware {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin: 50px 100px;
+}
+.section .fila-hardware .imagenes-hardware {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.section .fila-hardware .imagenes-hardware img {
+  width: auto;
+  height: 150px;
+}
+.section .fila-hardware p {
+  text-align: justify;
+  margin-top: 10rem;
+  max-width: 50rem;
+}
+
+/*# sourceMappingURL=ensamble-de-computadores-styles.css.map */

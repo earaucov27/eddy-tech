@@ -1,0 +1,19 @@
+.main{
+    .fila-tecnico{
+        display:flex ;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0px 100px;
+
+        p{
+            max-width: 1000px;
+        }
+
+        img{
+            height: auto; 
+            width: 300px;
+        }
+    }
+}

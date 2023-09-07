@@ -1,0 +1,33 @@
+.main{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin: 0px 200px 100px;
+
+    .fila-mision{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: center;
+
+        p{
+            max-width: 70rem;
+            margin: 2rem;
+            text-align: justify;
+        }
+    }
+
+    .fila-vision{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: center;
+        
+        
+        p{
+            max-width: 70rem;
+            margin: 2rem;
+            text-align: justify;
+        }
+    }
+}

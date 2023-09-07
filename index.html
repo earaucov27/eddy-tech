@@ -9,6 +9,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <!-- CSS -->
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/index-styles.css">
     <!--Google Font-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,126 +19,146 @@
     <!--titulo-->
     <title>Eddy Tech</title>
 </head>
-<body>
-    <header>
-        <div class="nav-bar-h">
-            <img src="images/eddytech.png" alt="Logo" class="logo-h">
-            <nav>
-                <ul class="nav-links-h">
-                    <li class="inicio"><a href="index.html">INICIO</a></li>
-                    <li class="dropdown-h">
-                        <a href="#" class="dropdown-toggle-h">SERVICIOS</a>
-                        <ul class="sub-menu-h">
-                            <li><a href="views/servicios/servicio-tecnico.html">Servicio técnico</a></li>
-                            <li><a href="views/servicios/ensamble-de-computadores.html">Ensamble de computadores</a></li>
+
+<body class="body">
+        <header class="header">
+            <nav class="navbar navbar-expand-lg bg-body-tertiary nav-contenedor">
+                <div class="container-fluid nav-div">
+                    <a class="navbar-brand" href="#">
+                        <img src="images/eddytech.png" alt="">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse navbar-h" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item nav-li">
+                                <a class="nav-link active" aria-current="page" href="#">INICIO</a>
+                            </li>
+                            <li class="nav-item dropdown nav-li">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    SERVICIOS
+                                </a>
+                                <ul class="dropdown-menu navbar-dropdown-menu">
+                                    <li><a class="dropdown-item" href="views/servicios/servicio-tecnico.html">Servicio técnico</a></li>
+                                    <hr>
+                                    <li><a class="dropdown-item" href="#">Ensamble de computadores</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item nav-li">
+                                <a class="nav-link active" aria-current="page" href="#">NOSOTROS</a>
+                            </li>
+                            <li class="nav-item nav-li">
+                                <a class="nav-link active" aria-current="page" href="#">CONTACTO</a>
+                            </li>
                         </ul>
-                    </li>
-                    <li class="contacto"><a href="views/contacto.html">CONTACTO</a></li>
-                    <li class="nosotros"><a href="views/nosotros.html">NOSOTROS</a></li>
-                </ul>
+                    </div>
+                </div>
             </nav>
-        </div>
-    </header>
+        </header>
 
-    <main>
-        <!-- Contenido principal -->
-        <h1>EDDY TECH</h1>
-        <div class="container container-main">
-            <div class="row row-cards-main fila1">
-                <div class="card shadow"   style="width: 18rem;">
-                    <img src="images/notebook-dibujado-2.png" class="card-img-top card-img-styles" alt="foto-pc"><hr>
-                    <div class="card-body">
-                    <p class="card-text">Confía en Eddy Tech para llevar tus dispositivos desde la oscuridad de los problemas técnicos hacia la luz de la funcionalidad renovada. Tanto si se trata de computadoras de sobremesa robustas como de portátiles ágiles, nuestro compromiso persistente es la llave que desbloquea su potencial.</p>
+        <main class="main">
+            <!-- Contenido principal -->
+            <h1>EDDY TECH</h1>
+            <div class="container container-main">
+                <div class="row row-cards-main fila1">
+                    <div class="card shadow card-shadow">
+                        <img src="images/notebook-dibujado-2.png" class="card-img-top card-img-styles" alt="foto-pc"><hr>
+                        <div class="card-body">
+                        <p class="card-text">Confía en Eddy Tech para llevar tus dispositivos desde la oscuridad de los problemas técnicos hacia la luz de la funcionalidad renovada. Tanto si se trata de computadoras de sobremesa robustas como de portátiles ágiles, nuestro compromiso persistente es la llave que desbloquea su potencial.</p>
+                        </div>
+                    </div>
+                    <div class="card shadow card-shadow">
+                        <img src="images/reparacion-logo.png" class="card-img-top card-img-styles" alt="foto-pc"><hr>
+                        <div class="card-body">
+                        <p class="card-text">En Eddy Tech, la reparación no es solo una tarea, sino un ritual. Cada computadora que llega a nuestras manos recibe una atención personalizada, un diagnóstico minucioso que descubre sus secretos internos. Nuestros servicios, desde el formateo preciso hasta la instalación delicada de programas, son pinceladas de maestría en la obra de arte que es tu dispositivo.</p>
+                        </div>
+                    </div>
+                    <div class="card shadow card-shadow">
+                        <img src="images/trabajo-a-domicilio.png" class="card-img-top card-img-styles" alt="foto-pc">
+                        <hr>
+                        <div class="card-body">
+                        <p class="card-text">Eddy Tech no solo repara tecnología; forja conexiones entre lo humano y lo digital. Cada limpieza de hardware es un acto de amor hacia la longevidad de tu equipo. Cada recambio de pasta térmica es un recordatorio de que la excelencia técnica y la pasión coexisten en armonía.</p>
+                        </div>
                     </div>
                 </div>
-                <div class="card shadow" style="width: 18rem;">
-                    <img src="images/reparacion-logo.png" class="card-img-top card-img-styles" alt="foto-pc"><hr>
-                    <div class="card-body">
-                    <p class="card-text">En Eddy Tech, la reparación no es solo una tarea, sino un ritual. Cada computadora que llega a nuestras manos recibe una atención personalizada, un diagnóstico minucioso que descubre sus secretos internos. Nuestros servicios, desde el formateo preciso hasta la instalación delicada de programas, son pinceladas de maestría en la obra de arte que es tu dispositivo.</p>
-                    </div>
-                </div>
-                <div class="card shadow" style="width: 18rem;">
-                    <img src="images/trabajo-a-domicilio.png" class="card-img-top card-img-styles" alt="foto-pc">
-                    <hr>
-                    <div class="card-body">
-                    <p class="card-text">Eddy Tech no solo repara tecnología; forja conexiones entre lo humano y lo digital. Cada limpieza de hardware es un acto de amor hacia la longevidad de tu equipo. Cada recambio de pasta térmica es un recordatorio de que la excelencia técnica y la pasión coexisten en armonía.</p>
-                    </div>
-                </div>
-            </div>
 
-            <div class="fila2">
-                <img src="images/reparacion-computador.png" alt="reparacion-computador" class="fila2-imagen1">
-            
-            <p class="fila2-texto">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores, accusamus! Qui eius veniam impedit expedita similique, itaque enim vero, praesentium debitis, at temporibus exercitationem consectetur voluptatem? Animi placeat dolores atque.
-                Mollitia itaque quod aliquam quibusdam sit rem quos vel nisi cum voluptatibus sunt magni quam, cumque neque et aperiam sint delectus facilis commodi quia ipsum. Amet laudantium neque ea deserunt.
-            </p>
-            
+                <div class="fila2">
+                    <img src="images/reparacion-computador.png" alt="reparacion-computador" class="fila2-imagen1">
                 
+                <p class="fila2-texto">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores, accusamus! Qui eius veniam impedit expedita similique, itaque enim vero, praesentium debitis, at temporibus exercitationem consectetur voluptatem? Animi placeat dolores atque.
+                    Mollitia itaque quod aliquam quibusdam sit rem quos vel nisi cum voluptatibus sunt magni quam, cumque neque et aperiam sint delectus facilis commodi quia ipsum. Amet laudantium neque ea deserunt.
+                </p>
+                
+                    
+                </div>
             </div>
-        </div>
+            
+        </main>
+
+        <section class="section">
+            <h3>Podemos ayudarte con las siguientes marcas:</h3>
+            <div id="carouselExampleAutoplaying" class="carousel carousel-dark slide fila2-carousel" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="images/windows-10.png" class="d-block w-100" alt="windows-10">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/windows-11.png" class="d-block w-100" alt="windows-11">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/office.png" class="d-block w-100 " alt="office">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/linux.png" class="d-block w-100 " alt="linux">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+            <h4>Y muchas mas...</h4>
+        </section>
         
-    </main>
-
-    <section>
-        <h3>Podemos ayudarte con las siguientes marcas:</h3>
-        <div id="carouselExampleAutoplaying" class="carousel carousel-dark slide fila2-carousel" data-bs-ride="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="images/windows-10.png" class="d-block w-100" alt="...">
+        <footer class="footer">
+            <div class="footer-content">
+                <div class="footer-links">
+                    <div class="footer-section">
+                        <h3>Enlaces</h3>
+                        <ul>
+                            <li><a href="#">Inicio</a></li>
+                                <ul>
+                                    <li><a href="views/servicios/servicio-tecnico.html">Servicio técnico</a></li>
+                                    <li><a href="views/servicios/ensamble-de-computadores.html">Ensamble de computadoras</a></li>
+                                </ul>
+                            <li><a href="views/contacto.html">Contacto</a></li>
+                            <li><a href="views/nosotros.html">Nosotros</a></li>
+                        </ul>
+                    </div>
+                    
                 </div>
-                <div class="carousel-item">
-                    <img src="images/windows-11.png" class="d-block w-100" alt="...">
-                </div>
-                <div class="carousel-item">
-                    <img src="images/office.jpg" class="d-block w-100 " alt="...">
-                </div>
-                <div class="carousel-item">
-                    <img src="images/linux.jpg" class="d-block w-100 " alt="...">
+                <div class="footer-social">
+                    <p>Siguenos:</p>
+                    <a href="https://www.facebook.com/eddytech.st"><i class="fab fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/eddytech.st/"><i class="fab fa-instagram"></i></a>
+                    <a href="https://twitter.com/eddytech_st"><i class="fab fa-x-twitter"></i></a>
                 </div>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
-                data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
-                data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
-        </div>
-        <h4>Y muchas mas...</h4>
-    </section>
-    
-    <footer class="footer">
-        <div class="footer-content">
-            <div class="footer-links">
-                <div class="footer-section">
-                    <h3>Enlaces</h3>
-                    <ul>
-                        <li><a href="#">Inicio</a></li>
-                            <ul>
-                                <li><a href="views/servicios/servicio-tecnico.html">Servicio técnico</a></li>
-                                <li><a href="views/servicios/ensamble-de-computadores.html">Ensamble de computadoras</a></li>
-                            </ul>
-                        <li><a href="views/contacto.html">Contacto</a></li>
-                        <li><a href="views/nosotros.html">Nosotros</a></li>
-                    </ul>
-                </div>
-                
+            <div class="footer-copyright">
+                <p>© Eddy Tech 2023 - Todos los derechos reservados - Sitio desarrollado por Edison Arauco.</p>
             </div>
-            <div class="footer-social">
-                <p>Siguenos:</p>
-                <a href="https://www.facebook.com/eddytech.st"><i class="fab fa-facebook"></i></a>
-                <a href="https://www.instagram.com/eddytech.st/"><i class="fab fa-instagram"></i></a>
-                <a href="https://twitter.com/eddytech_st"><i class="fab fa-x-twitter"></i></a>
-            </div>
-        </div>
-        <div class="footer-copyright">
-            <p>© Eddy Tech 2023 - Todos los derechos reservados - Sitio desarrollado por Edison Arauco.</p>
-        </div>
-    </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+        </footer>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
 </body>
 </html>
