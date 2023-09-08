@@ -22,18 +22,21 @@
 
 <body class="body">
     <header class="header">
-        <nav class="navbar navbar-expand-lg bg-body-tertiary nav-contenedor">
-            <div class="container-fluid nav-div">
-                <a class="navbar-brand" href="../index.html">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary navbar-nav-tag">
+            <div class="container-fluid navbar-contenedor">
+                <!-- Imagen del logo Eddy Tech -->
+                <a class="navbar-brand" href="index.html">
                     <img src="../images/eddytech.png" alt="Logo">
                 </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                    aria-label="Toggle navigation">
+                <!-- Botón responsivo del menú hamburguesa -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse navbar-h" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <!-- Enlaces del navbar -->
+                <div class="collapse navbar-collapse links-navbar" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0"></ul>
+                    <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
                         <li class="nav-item nav-li">
                             <a class="nav-link active" aria-current="page" href="../index.html">INICIO</a>
                         </li>
@@ -73,33 +76,30 @@
             </div>
     </main>
 
-    <section class="section">
-    </section>
-
     <footer class="footer">
-        <div class="footer-content">
+        <div class=" footer-content">
             <div class="footer-links">
                 <div class="footer-section">
                     <h3>Enlaces</h3>
                     <ul>
-                        <li><a href="../index.html">Inicio</a></li>
-                            <ul>
-                                <li><a href="../views/servicios/servicio-tecnico.html">Servicio técnico</a></li>
-                                <li><a href="../views/servicios/ensamble-de-computadores.html">Ensamble de computadoras</a></li>
-                            </ul>
+                        <li><a href="../index.html">Inicio</a></li> 
+                        <li><a href="../views/servicios/servicio-tecnico.html">Servicio técnico</a></li>
+                        <li><a href="../views/servicios/ensamble-de-computadores.html">Ensamble de computadoras</a></li>  
                         <li><a href="../views/nosotros.html">Nosotros</a></li>
                         <li><a href="../views/contacto.html">Contacto</a></li>
                     </ul>
                 </div>
             </div>
             <div class="footer-social">
-                <p>Siguenos:</p>
-                <a href="https://www.facebook.com/eddytech.st" target="_blank"><i class="fab fa-facebook"></i></a>
+                <h3>Siguenos:</h3>
+                <div class="footer-icons-fab">
+                    <a href="https://www.facebook.com/eddytech.st" target="_blank"><i class="fab fa-facebook"></i></a>
                     <a href="https://www.instagram.com/eddytech.st/" target="_blank"><i class="fab fa-instagram"></i></a>
                     <a href="https://twitter.com/eddytech_st" target="_blank"><i class="fab fa-x-twitter"></i></a>
+                </div>
             </div>
         </div>
-        <div class="footer-copyright">
+        <div class="container-fluid footer-copyright ">
             <p>© Eddy Tech 2023 - Todos los derechos reservados</p>
         </div>
     </footer>

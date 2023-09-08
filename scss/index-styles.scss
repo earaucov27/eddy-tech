@@ -1,57 +1,64 @@
 .main{
-    grid-area: main;
-    display: flex;
-    flex-flow: column nowrap;
-
     .container-main{
         display: flex;
         flex-direction: column;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        align-content: space-between;
-        
-        .fila1{
-            display: flex;
-            flex-flow: row wrap;
-            justify-content: space-around;
-            margin-bottom: 100px;
-
-            .card-shadow{
-                width: 20rem;
-            }
-
-            /*row*/
-            .card-img-styles{
-                width: auto;
-                height: auto;
-                margin: 20px;
-            }
-        }
-
-        .fila2{
+        .cards-shadow-fila1{
             display: flex;
             flex-direction: row;
-            justify-content: space-between;
-            align-items: center;
-
-            .fila2-imagen1{
-                width: auto;
-                height: 500px;
-                padding: 20px;
-            }
-            
-            .fila2-texto{
-                padding: 20px;
-                text-align: right;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            .card-shadow{
+                /* estas son las tarjetas */
+                max-width: 100%;
+                height: auto;
+                width: 300px;
+                margin: 2rem 4rem
             }
         }
-            
-        
+
+        .imagen-parrafo-fila2{
+            img{
+                max-width: 100%;
+                width: 50rem;
+                height: auto;
+            }
+            p{
+                text-align: justify;
+            }
+        }
+    }
+}
+
+/* Estilos para pantallas pequeñas main */
+@media screen and (max-width: 768px) {
+    .main {
+        .container-main{
+            .cards-shadow-fila1{
+                .card-shadow{
+                    /* estas son las tarjetas */
+                    max-width: 100%;
+                    height: auto;
+                    width: 80%;
+                    margin: 2rem 2rem
+                }
+            }
+    
+            .imagen-parrafo-fila2{
+                img{
+                    max-width: 100%;
+                    width: 50rem;
+                    height: auto;
+                }
+                p{
+                    text-align: justify;
+                    margin: 2rem;
+                }
+            }
+        }
     }
 }
 
 .section{
-    grid-area: section;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -62,12 +69,10 @@
     }
     
     .fila2-carousel{
-        width: 700px;
-        
+        width: 50%;
     }
 
     h4{
         padding: 50px;
     }
-    
 }
