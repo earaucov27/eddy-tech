@@ -1,10 +1,15 @@
 /* Importaciones */
 @import "colores";
+@import "contacto-styles";
+@import "ensamble-de-computadores-styles";
+@import "index-styles";
+@import "nosotros-styles";
+@import "servicio-tecnico-styles";
 
 /* Reset de márgenes general*/
 * {
     margin: 0rem;
-    padding: 0rem;
+    padding: 1rem;
 }
 
 .body {

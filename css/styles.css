@@ -1,10 +1,330 @@
 @charset "UTF-8";
 /* Importaciones */
 /* Variables */
+.main .contacto {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin: 0rem 0rem 10rem 0rem;
+}
+.main .contacto .fila-whatsapp {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.main .contacto .fila-whatsapp img {
+  height: auto;
+  width: 100px;
+  margin: 5rem;
+}
+.main .contacto .fila-whatsapp p {
+  max-width: 30rem;
+  text-align: center;
+}
+.main .contacto .fila-gmail {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.main .contacto .fila-gmail img {
+  height: auto;
+  width: 100px;
+  margin: 5rem;
+}
+.main .contacto .fila-gmail p {
+  max-width: 30rem;
+  text-align: center;
+}
+
+.main .fila-computador {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 3rem;
+}
+.main .fila-computador img {
+  max-width: 100%;
+  width: 500px;
+  height: auto;
+}
+.main .fila-computador p {
+  max-width: auto;
+  width: 30rem;
+  text-align: justify;
+}
+.main .fila-master-race {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 1rem 1rem;
+}
+.main .fila-master-race img {
+  max-width: 100%;
+  width: 40rem;
+  height: auto;
+}
+.main .fila-master-race p {
+  max-width: auto;
+  width: 30rem;
+  text-align: justify;
+}
+
+/* estilos para pantallas pequeñas main */
+@media (max-width: 768px) {
+  .main .fila-computador {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: center;
+    margin: 1rem 1rem;
+  }
+  .main .fila-computador img {
+    max-width: 100%;
+    width: 300px;
+    height: auto;
+  }
+  .main .fila-computador p {
+    max-width: auto;
+    width: auto;
+    text-align: justify;
+    margin: 1rem;
+  }
+  .fila-master-race {
+    display: flex;
+    flex-direction: column-reverse;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 1rem 1rem;
+  }
+  .fila-master-race .descripcion-ensamble p {
+    max-width: auto;
+    width: auto;
+    text-align: justify;
+    margin: 1rem;
+  }
+  .fila-master-race .imagen-master img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+.section .fila-hardware {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 1rem 2rem;
+}
+.section .fila-hardware .imagenes-hardware {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.section .fila-hardware .imagenes-hardware img {
+  max-width: 100%;
+  height: 100%;
+  width: 15rem;
+  margin: 1rem;
+}
+.section .fila-hardware p {
+  text-align: justify;
+  margin-top: 10rem;
+  max-width: 50rem;
+}
+
+/* estilos para pantallas pequeñas section*/
+@media (max-width: 768px) {
+  .section .fila-hardware {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    flex-wrap: wrap margin 1rem 1rem;
+  }
+  .section .fila-hardware .imagenes-hardware {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .section .fila-hardware .imagenes-hardware img {
+    max-width: 100%;
+    height: 100%;
+    width: 6rem;
+    margin: 1rem;
+  }
+  .section .fila-hardware .descripcion-hardware p {
+    margin: 1rem;
+    text-align: justify;
+  }
+}
+.main .container-main {
+  display: flex;
+  flex-direction: column;
+}
+.main .container-main .cards-shadow-fila1 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.main .container-main .cards-shadow-fila1 .card-shadow {
+  /* estas son las tarjetas */
+  max-width: 100%;
+  height: auto;
+  width: 300px;
+  margin: 2rem 4rem;
+}
+.main .container-main .imagen-parrafo-fila2 img {
+  max-width: 100%;
+  width: 50rem;
+  height: auto;
+}
+.main .container-main .imagen-parrafo-fila2 p {
+  text-align: justify;
+}
+
+/* Estilos para pantallas pequeñas main */
+@media screen and (max-width: 768px) {
+  .main .container-main .cards-shadow-fila1 .card-shadow {
+    /* estas son las tarjetas */
+    max-width: 100%;
+    height: auto;
+    width: 80%;
+    margin: 2rem 2rem;
+  }
+  .main .container-main .imagen-parrafo-fila2 img {
+    max-width: 100%;
+    width: 50rem;
+    height: auto;
+  }
+  .main .container-main .imagen-parrafo-fila2 p {
+    text-align: justify;
+    margin: 2rem;
+  }
+}
+.section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: space-between;
+}
+.section h3 {
+  padding: 50px;
+}
+.section .fila2-carousel {
+  width: 50%;
+}
+.section h4 {
+  padding: 50px;
+}
+
+.main {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 0px 200px;
+}
+.main .fila-mision {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+}
+.main .fila-mision p {
+  max-width: 70rem;
+  margin: 2rem;
+  text-align: justify;
+}
+.main .fila-vision {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+}
+.main .fila-vision p {
+  max-width: 70rem;
+  margin: 2rem;
+  text-align: justify;
+}
+
+@media (max-width: 768px) {
+  .main {
+    margin: 1rem 1rem;
+  }
+  .main .fila-mision {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+  }
+  .main .fila-mision p {
+    max-width: auto;
+    width: auto;
+    text-align: justify;
+    margin: 1rem;
+  }
+}
+.main .fila-tecnico {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap-reverse;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem 2rem;
+  padding: 2rem 3rem;
+}
+.main .fila-tecnico .fila-tecnico-p p {
+  max-width: 30rem;
+  width: auto;
+  margin: 3rem 1rem;
+  text-align: justify;
+}
+.main .fila-tecnico img {
+  height: auto;
+  width: 40%;
+  margin: 0rem 1rem;
+}
+
+/* estilos para pantallas pequeñas */
+@media (max-width: 768px) {
+  .main .fila-tecnico {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap-reverse;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
+    padding: 1rem;
+  }
+  .main .fila-tecnico .fila-tecnico-p p {
+    max-width: 40rem;
+    width: auto;
+    margin: 3rem 0rem;
+    text-align: justify;
+  }
+  .main .fila-tecnico img {
+    height: auto;
+    max-width: 100%;
+    width: 30rem;
+    margin: 0rem 1rem;
+  }
+}
 /* Reset de márgenes general*/
 * {
   margin: 0rem;
-  padding: 0rem;
+  padding: 1rem;
 }
 
 .body {
